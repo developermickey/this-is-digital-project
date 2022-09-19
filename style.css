@@ -26,9 +26,16 @@ html, body {
       height: 100%;
       background-color: #fff;
       position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      
+  }
+  #container{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 #nav {
@@ -42,6 +49,7 @@ html, body {
       justify-items: center;
       align-items: center;
      padding: 0 40px;
+     z-index: 999999999999;
   }
 #nav>h1{
       font-size: 40px;
@@ -100,7 +108,7 @@ html, body {
         left: 0;
     }
 
-#main>h1 {
+#container>h1 {
         font-size: 10vh;
         font-weight: 100;
         text-transform: capitalize;
@@ -109,7 +117,7 @@ html, body {
         position: relative;
         z-index: 99;
     }
-    #main #new h2 {
+    #container #new h2 {
         font-size: 4vh;
         font-weight: 100;
         text-transform: capitalize;
@@ -119,7 +127,7 @@ html, body {
         top: 70%;
         left: 25%;
     }
-#main>h1::after {
+#container>h1::after {
     content: "";
     position: absolute;
     width: 35%;
@@ -131,7 +139,7 @@ html, body {
     background-size: cover;
     }
     
-#main #img1{
+#container #img1{
     position: absolute;
     height: 432px;
     width: 300px;
@@ -139,14 +147,14 @@ html, body {
     top: 20%;
 
 }
-#main #img2{
+#container #img2{
     position: absolute;
     height: 215px;
     width: 256px;
     right: 27%;
     top: 18%;
 }
-#main #img3{
+#container #img3{
     position: absolute;
     height: 260px;
     width: 260px;
@@ -154,15 +162,15 @@ html, body {
     top: 52%;
 }
 
-#main img {
+#container img {
     transition: margin 0.4s ease;
 }
 
-#main img:hover {
+#container img:hover {
     margin-top: -20px;
 }
 
-#main #new h2 i {
+#container #new h2 i {
     background-color: #fff;
     padding: 5px 14px;
     border-radius: 50px;
@@ -170,9 +178,47 @@ html, body {
     overflow: hidden;
     margin-left: 15px;
     }
-
- 
-#main #new h2 i:hover{
+#container #new h2 i:hover{
     background-color: #02ea8f;
     transition: 0.4s ease;
+}
+#section {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+#section #first h3 {
+    font-size: 16px;
+    font-family: Cooper;
+    color: #fff;
+    text-align: center;
+}
+#section p {
+
+        font-size: 50px;
+        font-weight: 100;
+        padding-left: 18%;
+        padding-right: 18%;
+        line-height: 78px;
+    
+    
+}
+strong {
+    position: relative;
+}
+#section p strong::after {
+    content: "";
+    position: absolute;
+    width: 116%;
+    height: 90px;
+    bottom: -19%;
+    left: 50%;
+    background-image: url(./circle-green.svg);
+    transform: translate(-50%, 0);
+    background-size: cover;
+    z-index: 9999;
+
+
 }
